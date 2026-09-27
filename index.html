@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chadha Baccari — Junior Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Chadha Baccari, a junior full-stack developer and software engineering graduate (Faculty of Sciences of Gafsa) working with React, Node.js, HTML, CSS, JavaScript, PHP and SQL." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%238b5cf6'/><text x='32' y='43' font-family='monospace' font-size='26' font-weight='bold' fill='white' text-anchor='middle'>CB</text></svg>" />
+  <meta name="theme-color" content="#070b14" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Animated background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-mark">CB</span>
+        <span class="brand-name">Chadha Baccari</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#languages" class="nav-link">Languages</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" data-social="github" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub profile" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.7 5.38-5.27 5.66.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="#" data-social="linkedin" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <button class="icon-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark / light mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-photo reveal">
+          <!-- To use a real photo: replace .photo-mono with
+               <img src="assets/profile.jpg" alt="Chadha Baccari" class="photo-img"> -->
+          <div class="photo-frame glass">
+            <span class="photo-mono">CB</span>
+          </div>
+          <span class="photo-chip chip-top glass"><i class="pulse-dot"></i>Open to opportunities</span>
+          <span class="photo-chip chip-bottom glass">Sousse, Tunisia</span>
+          <div class="hero-code glass" aria-hidden="true">
+            <div class="code-bar"><span></span><span></span><span></span></div>
+            <pre class="code-body"><code><span class="c-key">const</span> <span class="c-var">dev</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Chadha Baccari"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Junior Software Engineer"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"React"</span>, <span class="c-str">"Node.js"</span>, <span class="c-str">"SQL"</span>],
+  <span class="c-fn">hire</span>: () =&gt; <span class="c-str">"Let's build!"</span>
+};</code></pre>
+          </div>
+        </div>
+        <div class="hero-content reveal">
+          <p class="hero-hello">Hello, I'm</p>
+          <h1 class="hero-name">Chadha Baccari</h1>
+          <p class="hero-role">Junior Software Engineer <span class="role-sep">|</span> Web Developer</p>
+          <p class="hero-desc">
+            Recent graduate in Software Engineering &amp; Information Systems from the
+            Faculty of Sciences of Gafsa. I build clean, modern and responsive web
+            applications — from full-stack projects with React and Node.js to
+            IoT-inspired ideas — and I'm open to freelance projects and internships.
+          </p>
+          <div class="hero-cta">
+            <a href="assets/Chadha_Baccari_CV.pdf" download class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-glass">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About <span class="grad">Me</span></h2>
+          <p>Get to know me a little better</p>
+        </div>
+        <div class="about-card glass reveal">
+          <p>
+            I'm a motivated junior software engineer and recent graduate with a
+            <strong>Bachelor's degree (Licence) in Software Engineering and Information
+            Systems</strong> from the <strong>Faculty of Sciences of Gafsa</strong>.
+          </p>
+          <p>
+            Through academic and personal projects — from full-stack applications with
+            React, Node.js and MongoDB to an IoT-based smart locker with facial
+            recognition — I built a solid foundation in web development, databases,
+            software design and AI-integrated features, working with Agile Scrum.
+          </p>
+          <p>
+            I'm eager to keep growing my technical skills, contribute to stimulating
+            projects in a professional setting, and turn ideas into functional,
+            well-structured and visually appealing applications.
+          </p>
+        </div>
+        <div class="traits-grid">
+          <div class="trait-card glass reveal">
+            <div class="trait-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65a.5.5 0 0 0 .12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1a7.03 7.03 0 0 0-1.69-.98l-.38-2.65A.49.49 0 0 0 14 2h-4a.49.49 0 0 0-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65a.5.5 0 0 0-.12.64l2 3.46c.14.24.42.34.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.05.24.25.42.49.42h4c.24 0 .44-.18.49-.42l.38-2.65a7.03 7.03 0 0 0 1.69-.98l2.49 1c.19.12.47.02.61-.22l2-3.46a.5.5 0 0 0-.12-.64l-2.11-1.65z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Problem Solver</h3>
+            <p>I enjoy breaking down complex problems into clear, logical solutions.</p>
+          </div>
+          <div class="trait-card glass reveal">
+            <div class="trait-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Team Player</h3>
+            <p>Collaborative by nature — Agile Scrum, clear communication, shared goals.</p>
+          </div>
+          <div class="trait-card glass reveal">
+            <div class="trait-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Fast Learner</h3>
+            <p>Constantly exploring new technologies — from React to AI foundations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>My <span class="grad">Education</span></h2>
+          <p>My academic background</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2023 — 2026</span>
+              <h3>Bachelor's Degree (Licence) in Software Engineering and Information Systems</h3>
+              <p class="timeline-org">Faculty of Sciences of Gafsa — Gafsa, Tunisia</p>
+              <p>
+                Specialization in Software Engineering and Information Systems.
+                Relevant coursework: software development, databases, and IT
+                project management.
+              </p>
+              <ul class="timeline-tags">
+                <li>Software Development</li>
+                <li>Databases</li>
+                <li>Project Management</li>
+                <li>Information Systems</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2022 — 2023</span>
+              <h3>Baccalaureate in Experimental Sciences</h3>
+              <p class="timeline-org">Lycée Mixte Gafsa — Gafsa, Tunisia</p>
+              <p>Secondary education with a focus on sciences, laying the groundwork for my computer science studies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="certs-grid">
+          <div class="cert-card glass reveal">
+            <span class="cert-badge">fCC</span>
+            <div>
+              <h4>Responsive Web Design</h4>
+              <p>FreeCodeCamp Certification</p>
+            </div>
+          </div>
+          <div class="cert-card glass reveal">
+            <span class="cert-badge">fCC</span>
+            <div>
+              <h4>JavaScript Algorithms &amp; Data Structures</h4>
+              <p>FreeCodeCamp Certification</p>
+            </div>
+          </div>
+          <div class="cert-card glass reveal">
+            <span class="cert-badge">AI</span>
+            <div>
+              <h4>Discovering Generative AI</h4>
+              <p>Découvrir l'IA générative</p>
+            </div>
+          </div>
+          <div class="cert-card glass reveal">
+            <span class="cert-badge">OCI</span>
+            <div>
+              <h4>AI Foundations Associate</h4>
+              <p>Oracle Cloud Infrastructure 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Technical <span class="grad">Skills</span></h2>
+          <p>Technologies and tools I work with</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card glass reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.56L11.99 24l-8.59-2.44L1.5 0zm7.09 9.65L8.36 7.01l8.41-.01.23-2.63H5.56l.69 7.9h9.06l-.32 3.5-2.99.81-3-.81-.19-2.15H6.47l.37 4.2 5.16 1.43 5.15-1.43.71-7.86H8.59z"/></svg>
+            </div>
+            <h3>HTML</h3>
+            <p>Semantic, accessible and well-structured markup.</p>
+            <div class="bar"><span class="bar-fill" data-width="85%"></span></div>
+          </div>
+          <div class="skill-card glass reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.56L11.99 24l-8.59-2.44L1.5 0zm17.09 4.41H5.41l.27 2.69h12.6l-.31 3.53-.23 2.6-3.98 1.08-3.97-1.08-.26-2.88H7.02l.48 5.42 4.49 1.24 4.5-1.24.6-6.68.06-.68.6-6z"/></svg>
+            </div>
+            <h3>CSS</h3>
+            <p>Responsive layouts, Flexbox, Grid and modern styling.</p>
+            <div class="bar"><span class="bar-fill" data-width="80%"></span></div>
+          </div>
+          <div class="skill-card glass reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.03 18.29c-.36-1.08-.96-1.86-2.49-2.64-1.53-.77-2.44-1.4-2.44-2.44 0-.98.79-1.72 2.03-1.72.9 0 1.66.35 2.24 1.05l1.31-.87c-.79-1.05-1.93-1.61-3.55-1.61-2.26 0-3.85 1.44-3.85 3.3 0 2.02 1.2 2.94 2.94 3.69 2.1.9 2.64 1.4 2.64 2.15 0 .77-.61 1.37-1.76 1.37-1.36 0-2.14-.7-2.77-1.55l-1.4.81c.74 1.28 2.07 2.24 4.18 2.24 2.53 0 4.27-1.35 4.27-3.43 0-.2-.02-.41-.07-.61l-.28.32zM12.1 6.68h-1.8v8.3c0 1.55-.64 1.95-1.76 1.95-1.13 0-1.59-.77-1.95-1.55l-1.46.88c.43.99 1.4 2.11 3.41 2.11 2.19 0 3.57-1.22 3.57-3.86V6.68z"/></svg>
+            </div>
+            <h3>JavaScript</h3>
+            <p>Interactive UIs, DOM manipulation and ES6+ features.</p>
+            <div class="bar"><span class="bar-fill" data-width="70%"></span></div>
+          </div>
+          <div class="skill-card glass reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>SQL</h3>
+            <p>Relational databases, queries, joins and data modeling.</p>
+            <div class="bar"><span class="bar-fill" data-width="75%"></span></div>
+          </div>
+          <div class="skill-card glass reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.55 11.44 12.56.45a1.53 1.53 0 0 0-2.12 0L8.15 2.74l2.9 2.9a1.82 1.82 0 0 1 2.31 2.33l2.8 2.8a1.82 1.82 0 1 1-1.09 1.03l-2.61-2.61v6.87a1.82 1.82 0 1 1-1.5-1.76V9.2a1.83 1.83 0 0 1-.99-2.39L7.09 3.99.45 10.63a1.53 1.53 0 0 0 0 2.12l10.99 10.99a1.53 1.53 0 0 0 2.12 0l10.99-10.99a1.53 1.53 0 0 0 0-2.12z"/></svg>
+            </div>
+            <h3>Git</h3>
+            <p>Version control, branching and collaborative workflows.</p>
+            <div class="bar"><span class="bar-fill" data-width="80%"></span></div>
+          </div>
+          <div class="skill-card glass reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.7 5.38-5.27 5.66.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </div>
+            <h3>GitHub</h3>
+            <p>Repositories, pull requests and project hosting.</p>
+            <div class="bar"><span class="bar-fill" data-width="80%"></span></div>
+          </div>
+          <div class="skill-card glass reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3>Software Engineering</h3>
+            <p>SDLC, agile methods, clean code and problem solving.</p>
+            <div class="bar"><span class="bar-fill" data-width="75%"></span></div>
+          </div>
+          <div class="skill-card glass reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Information Systems</h3>
+            <p>Systems analysis, data management and design.</p>
+            <div class="bar"><span class="bar-fill" data-width="70%"></span></div>
+          </div>
+        </div>
+        <div class="tool-chips reveal">
+          <span class="chip-label">Also working with</span>
+          <span class="chip">React.js</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">PHP</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Python</span>
+          <span class="chip">Agile Scrum</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>My <span class="grad">Projects</span></h2>
+          <p>Academic and personal work</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass reveal">
+            <div class="project-media media-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <div class="project-body">
+              <span class="project-year">2026</span>
+              <h3>Full-Stack Eco-Products &amp; RSE Reporting App</h3>
+              <p>
+                A full-stack web application for managing ecological products
+                and intelligently generating RSE reports, integrating AI models
+                for anomaly detection and classification of connected
+                plant-wall data. Developed following Agile Scrum.
+              </p>
+              <ul class="project-tags"><li>React.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Python</li><li>AI</li></ul>
+              <!-- TODO: replace href with your project repo or live URL -->
+              <a href="#" data-social="github" target="_blank" rel="noopener" class="btn btn-glass btn-sm">
+                View Project
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="project-card glass reveal">
+            <div class="project-media media-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="project-body">
+              <span class="project-year">2026</span>
+              <h3>E-Learning Platform</h3>
+              <p>
+                A platform for managing courses, users and pedagogical content,
+                with secure authentication, dynamic data management and a
+                responsive interface.
+              </p>
+              <ul class="project-tags"><li>React.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li></ul>
+              <!-- TODO: replace href with your project repo or live URL -->
+              <a href="#" data-social="github" target="_blank" rel="noopener" class="btn btn-glass btn-sm">
+                View Project
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="project-card glass reveal">
+            <div class="project-media media-3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
+            </div>
+            <div class="project-body">
+              <span class="project-year">2025</span>
+              <h3>Smart IoT Locker with Facial Recognition</h3>
+              <p>
+                A secured smart locker based on facial recognition, with
+                remote management and control via IoT. Personal project
+                combining robotics and IoT.
+              </p>
+              <ul class="project-tags"><li>IoT</li><li>Robotics</li><li>Facial Recognition</li></ul>
+              <!-- TODO: replace href with your project repo or live URL -->
+              <a href="#" data-social="github" target="_blank" rel="noopener" class="btn btn-glass btn-sm">
+                View Project
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="project-card glass reveal">
+            <div class="project-media media-4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <div class="project-body">
+              <span class="project-year">2025</span>
+              <h3>Purchases &amp; Sales Management App</h3>
+              <p>
+                A web application managing purchases, sales and stock with
+                FIFO/LIFO (PEPS/DEPS) methods, automatic cost computation and
+                monthly report generation.
+              </p>
+              <ul class="project-tags"><li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <!-- TODO: replace href with your project repo or live URL -->
+              <a href="#" data-social="github" target="_blank" rel="noopener" class="btn btn-glass btn-sm">
+                View Project
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="project-card glass reveal">
+            <div class="project-media media-5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+            <div class="project-body">
+              <span class="project-year">2024</span>
+              <h3>Dynamic E-Commerce Website</h3>
+              <p>
+                A dynamic e-commerce site with product display, user
+                management, shopping cart and order processing — featuring a
+                modern, responsive interface with dynamic data handling.
+              </p>
+              <ul class="project-tags"><li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <!-- TODO: replace href with your project repo or live URL -->
+              <a href="#" data-social="github" target="_blank" rel="noopener" class="btn btn-glass btn-sm">
+                View Project
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Languages ===== -->
+    <section class="section" id="languages">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Languages <span class="grad">I Speak</span></h2>
+          <p>Communication is part of the job</p>
+        </div>
+        <div class="languages-grid">
+          <div class="language-card glass reveal">
+            <div class="lang-head">
+              <h3>Arabic</h3>
+              <span class="lang-level">Native</span>
+            </div>
+            <div class="bar bar-lg"><span class="bar-fill" data-width="100%"></span></div>
+          </div>
+          <div class="language-card glass reveal">
+            <div class="lang-head">
+              <h3>French</h3>
+              <span class="lang-level">Professional Working</span>
+            </div>
+            <div class="bar bar-lg"><span class="bar-fill" data-width="85%"></span></div>
+          </div>
+          <div class="language-card glass reveal">
+            <div class="lang-head">
+              <h3>English</h3>
+              <span class="lang-level">Professional Working</span>
+            </div>
+            <div class="bar bar-lg"><span class="bar-fill" data-width="80%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Get In <span class="grad">Touch</span></h2>
+          <p>Have a project or an internship in mind? Let's talk.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info glass reveal">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:bakarichadha12@gmail.com">bakarichadha12@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.7 5.38-5.27 5.66.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              </div>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/chadha7" data-social="github" target="_blank" rel="noopener noreferrer">github.com/chadha7</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              </div>
+              <div>
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/chadha-baccari-466b092b6/" data-social="linkedin" target="_blank" rel="noopener noreferrer">linkedin.com/in/chadha-baccari-466b092b6</a>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Sousse, Tunisia</p>
+              </div>
+            </div>
+            <a href="mailto:bakarichadha12@gmail.com" class="btn btn-primary btn-full">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contact Me
+            </a>
+            <a href="assets/Chadha_Baccari_CV.pdf" download class="btn btn-glass btn-full">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download My CV
+            </a>
+          </div>
+          <form class="contact-form glass reveal" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project / Internship inquiry" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">CB</span>
+        <div>
+          <p class="footer-name">Chadha Baccari</p>
+          <p class="footer-tagline">Junior Software Engineer — Built with HTML, CSS &amp; JavaScript</p>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="#" data-social="github" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub profile" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.7 5.38-5.27 5.66.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="#" data-social="linkedin" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:bakarichadha12@gmail.com" class="icon-btn" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="container footer-copy">
+      <p>&copy; <span id="year"></span> Chadha Baccari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
